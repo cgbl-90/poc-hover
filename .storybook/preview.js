@@ -1,22 +1,4 @@
 /** @type { import('@storybook/react-vite').Preview } */
-import { INITIAL_VIEWPORTS } from "@storybook/addon-viewport";
-
-const mobileViewports = {
-  iphone14: {
-    name: "iPhone 14",
-    styles: {
-      width: "390px",
-      height: "844px",
-    },
-  },
-  desktop: {
-    name: "Desktop",
-    styles: {
-      width: "1200px",
-      height: "844px",
-    },
-  },
-};
 
 const preview = {
   parameters: {
@@ -33,18 +15,12 @@ const preview = {
 
     viewport: {
       viewports: {
-        ...mobileViewports,
-        ...INITIAL_VIEWPORTS,
-      },
-    },
-
-    chromatic: {
-      modes: {
-        iphone14: {
-          viewport: "390x844",
-        },
-        desktop: {
-          viewport: "1200x844",
+        options: {
+          small: { name: "Small", styles: { width: "640px", height: "900px" } },
+          large: {
+            name: "Large",
+            styles: { width: "1024px", height: "900px" },
+          },
         },
       },
     },

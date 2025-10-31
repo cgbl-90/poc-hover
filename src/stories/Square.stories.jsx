@@ -11,8 +11,8 @@ export default {
     layout: "centered",
     chromatic: {
       modes: {
-        mobile: allModes["small"],
-        desktop: allModes["large"],
+        small: allModes["small"],
+        large: allModes["large"],
       },
     },
   },
