@@ -1,6 +1,5 @@
 import { fn } from "storybook/test";
 import { userEvent, within, expect } from "storybook/test";
-import { allModes } from "../../.storybook/modes";
 
 import { Square } from "./Square";
 
@@ -9,12 +8,6 @@ export default {
   component: Square,
   parameters: {
     layout: "centered",
-    chromatic: {
-      modes: {
-        small: allModes["small"],
-        large: allModes["large"],
-      },
-    },
   },
   tags: ["autodocs"],
   argTypes: {

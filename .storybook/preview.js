@@ -1,11 +1,19 @@
 /** @type { import('@storybook/react-vite').Preview } */
 
+import { allModes } from "./modes";
+
 const preview = {
   parameters: {
     controls: {
       matchers: {
         color: /(background|color)$/i,
         date: /Date$/i,
+      },
+    },
+    chromatic: {
+      modes: {
+        small: allModes["small"],
+        large: allModes["large"],
       },
     },
 
@@ -16,9 +24,9 @@ const preview = {
     viewport: {
       viewports: {
         options: {
-          small: { name: "Small", styles: { width: "640px", height: "900px" } },
+          small: { name: "small", styles: { width: "640px", height: "900px" } },
           large: {
-            name: "Large",
+            name: "large",
             styles: { width: "1024px", height: "900px" },
           },
         },
