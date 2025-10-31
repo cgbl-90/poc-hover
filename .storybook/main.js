@@ -7,6 +7,7 @@ const config = {
     "@storybook/addon-a11y",
     "@storybook/addon-vitest",
     "@storybook/addon-viewport",
+    "storybook-addon-pseudo-states"
   ],
   framework: {
     name: "@storybook/react-vite",

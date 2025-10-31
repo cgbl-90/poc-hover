@@ -65,3 +65,13 @@ export const HoverAndShowX = {
     await canvas.findByLabelText("Close");
   },
 };
+
+export const ForcedHoverSnapshot = {
+  args: {
+    initialIsClosed: false,
+    label: "Forced Hover State",
+  },
+  parameters: {
+    pseudo: { hover: true },
+  },
+};
