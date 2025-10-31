@@ -1,5 +1,6 @@
 import { fn } from "storybook/test";
 import { userEvent, within, expect } from "storybook/test";
+import { allModes } from "../.storybook/modes";
 
 import { Square } from "./Square";
 
