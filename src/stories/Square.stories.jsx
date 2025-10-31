@@ -62,6 +62,6 @@ export const HoverAndShowX = {
     const canvas = within(canvasElement);
     const square = canvas.getByText("Show X");
     await userEvent.hover(square);
-    await canvas.findByLabelText("Close").toBeInTheDocument();
+    await canvas.findByLabelText("Close");
   },
 };
