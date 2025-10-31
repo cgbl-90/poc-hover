@@ -1,0 +1,49 @@
+.close-button {
+    cursor: pointer;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    line-height: 1;
+    color: #888;
+    border-radius: 50%;
+    background: transparent;
+    border: none;
+    padding: 0;
+    transition: opacity 0.2s ease-in-out;
+    opacity: 0;
+}
+
+.close-button:hover {
+    color: #333;
+    background-color: #eee;
+}
+
+.closable-square {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    transition: border-color 0.2s ease-in-out;
+}
+
+.closable-square:hover .close-button {
+    opacity: 1;
+}
+
+.closable-square--closed {
+    background-color: #ddd;
+    border-color: #999;
+    opacity: 0.7;
+}
