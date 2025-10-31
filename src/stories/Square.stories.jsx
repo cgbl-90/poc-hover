@@ -8,6 +8,12 @@ export default {
   component: Square,
   parameters: {
     layout: "centered",
+    chromatic: {
+      modes: {
+        mobile: allModes["small"],
+        desktop: allModes["large"],
+      },
+    },
   },
   tags: ["autodocs"],
   argTypes: {
