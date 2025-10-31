@@ -56,11 +56,11 @@ export const HoverAndClose = {
 export const HoverAndShowX = {
   args: {
     initialIsClosed: false,
-    label: "Check Hover And Show X",
+    label: "Show X",
   },
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
-    const square = canvas.getByText("Check Hover And Show X");
+    const square = canvas.getByText("Show X");
     await userEvent.hover(square);
     const closeButton = await canvas.findByLabelText("Close");
     await expect(closeButton).toBeInTheDocument();
